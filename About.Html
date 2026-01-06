@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About-us</title>
-  <link rel="stylesheet" href="./Home.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
  <header class="header" >
@@ -12,7 +12,7 @@
 
       
       <div class="logo">
-        <a href="./Home.html" >
+        <a href="./index.html" >
         <img src="./images/colored-logo (1).png" alt="Al-Riaz Knitwear">
       </a>
       </div>
@@ -230,7 +230,7 @@
 
   <script>
     const currentPage =
-      window.location.pathname.split("/").pop() || "Home.html";
+      window.location.pathname.split("/").pop() || "index.html";
 
     document.querySelectorAll(".nav-link").forEach(link => {
       const linkPage = link.getAttribute("href").replace("./", "");

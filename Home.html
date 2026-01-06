@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Riaz Knitwear</title>
+  <link rel="stylesheet" href="./Home.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Mother+Beloved&display=swap" rel="stylesheet"> -->
+
+</head>
+
+<header class="header" >
+    <div class="header-main">
+
+      
+      <div class="logo">
+        <a href="./Home.html" >
+        <img src="./images/colored-logo (1).png" alt="Al-Riaz Knitwear">
+      </a>
+      </div>
+
+     
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav" id="mainNav">
+       
+        <button class="close-btn" id="closeMenu">✖</button>
+
+        <a href="./Home.html" class="nav-link">Home</a>
+        <a href="./Products.html" class="nav-link">Products</a>
+        <a href="./Services.html" class="nav-link">Our Services</a>
+        <a href="./About.Html" class="nav-link">About Us</a>
+        <a href="./Contact.html" class="nav-link">Contact</a>
+        <a href="./Documentation.html" class="nav-link">Documentation</a>
+      </nav>
+
+    </div>
+  </header>
+
+<body>
+
+
+
+
+<!-- Back to Top Button -->
+<div class="scroll-to-top-container" id="scrollContainer">
+    <div class="progress-ring" id="progressRing"></div>
+    <button id="backToTop" title="Go to top"></button>
+  </div>
+
+  <div class="simple-carousel">
+    <div class="carousel-slide active">
+      <div class="banner" style="background-image: url(./images/mainbanner.jpg);">
+        <div class="text-wrapper">
+          <div class="overlay-text">
+         <h3 class="first-text"><b>WE TRANSLATE THE TRENDS</b></h3>
+          </div>
+
+        <h4 class="second-text">INTO COMMERCIAL PRODUCTS</h4>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <div class="banner" style="background-image: url(./images/productsbanner.jpg);">
+        <div class="text-wrapper">
+          <div class="overlay-text">
+            <h3 class="first-text">CREATIVE SOLUTIONS</h3>
+          </div>
+
+          <h4 class="second-text">FOR YOUR BUSINESS</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-slide">
+      <div class="banner" style="background-image: url(./images/36.jpg);">
+        <div class="text-wrapper">
+          <div class="overlay-text">
+            <h3 class="first-text">DESIGN & INNOVATE</h3>
+          </div>
+          <h4 class="second-text">WITH PASSION</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+
+
+
+
+
+<h3 class="text-Quality1">We Produce Quality Products.</h3>
+
+
+  <div class="wears-grid">
+   <div class="wear-card" onclick="goToPage('Mens','Men’s Wears','./images/menswear.jpg')">
+  <img src="./images/menswear.jpg" alt="" >
+  <p class="wear-title">Men’s Wears</p>
+</div>
+
+<div class="wear-card" onclick="goToPage('Ladies','Ladie’s Wears','./images/one4.jpg')">
+  <img src="./images/one4.jpg" alt="" >
+  <p class="wear-title">Ladie’s Wears</p>
+</div>
+
+<div class="wear-card" onclick="goToPage('Boys','Boy’s Wears','./images/boyswear.jpg')">
+  <img src="./images/boyswear.jpg" alt="" >
+  <p class="wear-title">Boy’s Wears</p>
+</div>
+
+<div class="wear-card"  onclick="goToPage('Girls','Girl’s Wears','./images/girlwear.jpg')">
+  <img src="./images/girlwear.jpg" alt="">
+  <p class="wear-title">Girl’s Wears</p>
+</div>
+
+
+</div>
+
+
+
+
+  <!-- Global---Section -->
+  <div class="section-title">
+    <span>OUR GOAL</span>
+  </div>
+
+
+
+  <p class="big-text">
+  <b>The goal was to meet demand for a brand that combined both quality and style.Our team is committed to make and supply products that people don't just want but need.</b>
+  </p>
+
+
+  <div class="sixbigimage">
+    <div class="siximg"><img src="./images/48.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/40.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/ourservises4.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/51.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/38.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/menswear (1).jpg" alt=""></div>
+    
+    <div class="siximg"><img src="./images/one25.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/61.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/one4.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/ourservises10.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/44.jpg" alt=""></div>
+    <div class="siximg"><img src="./images/65.jpg" alt=""></div>
+  </div>
+
+<div id="gallery" class="gallery2">
+  <span class="close2" onclick="closeGallery()">&times;</span>
+  <img id="galleryImg">
+  <span class="nav2 prev2" onclick="changeSlide(-1)">&#10094;</span>
+  <span class="nav2 next2" onclick="changeSlide(1)">&#10095;</span>
+</div>
+
+
+  <!-- Global---Section -->
+  <div class="section-title">
+    <span>OUR GOAL</span>
+  </div>
+
+
+  <!-- SMALL---SLIDER -->
+  
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      <div class="carousel-item"><img src="images/client1.png" alt=""></div>
+      <div class="carousel-item"><img src="images/client2.png" alt=""></div>
+      <div class="carousel-item"><img src="./images/client3.jpg" alt=""></div>
+      <div class="carousel-item"><img src="./images/client4.jpg" alt=""></div>
+      <div class="carousel-item"><img src="./images/client5.jpg" alt=""></div>
+
+      <div class="carousel-item"><img src="./images/client6.jpg" alt=""></div>
+      <div class="carousel-item"><img src="./images/client7.jpg" alt=""></div>
+      <div class="carousel-item"><img src="./images/client8.jpg" alt=""></div>
+      <div class="carousel-item"><img src="./images/clinet9.png" alt=""></div>
+      <div class="carousel-item"><img src="./images/clinet10.png" alt=""></div>
+      <div class="carousel-item"><img src="./images/client11.jpg" alt=""></div>
+      <div class="carousel-item"><img src="./images/client12.jpg" alt=""></div>
+      <div class="carousel-item"><img src="images/cleint13.png" alt=""></div>
+      <div class="carousel-item"><img src="images/client14.png" alt=""></div>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+  <!-- FOOTER--SECTION---Start -->
+
+  <footer class="footer" >
+    <div class="footer-container">
+
+
+      <div class="footer-box">
+        <h3 class="heading">About Us</h3>
+        <p class="about-text">
+        Established in 1990 Al-Riaz Knitwear has become one of the most successful names
+        in making trendy and fashion garments in the Pakistan and our name has a significant
+        presence in Europe.
+        </p>
+        <p class="about-text">
+          We are working for 24 year but still as days first our priority has always
+          been to produce high quality garment to cater the customer’s basic need of economy
+          and durability...
+        </p>
+       
+        <button class="footer-btn btn-main" onclick="window.location.href='./About.Html'">Read more</button>
+      </div>
+
+
+      <div class="footer-box" >
+        <h2 class="heading">Follow Us</h2>
+
+        <div class="social-icons">
+          <!-- <span><img src="./images/facebook-f-brands-solid-full.svg" alt=""></span> -->
+  <a href="https://www.facebook.com/profile.php?id=100067048239975#" target="_blank">
+  <span><img src="./images/facebook-176-svgrepo-com.svg" alt="Facebook Icon"></span>
+</a>
+          <span><img src="./images/social-google-plus-svgrepo-com.svg" alt=""></span>
+          <span><img src="./images/linkedin-svgrepo-com.svg" alt=""></span>
+          <a href="https://www.youtube.com/"  target="_blank">
+          <span><img src="./images/youtube-svgrepo-com.svg" alt=""></span>
+          </a>
+          <span><img src="./images/social-tumbler-svgrepo-com.svg" alt=""></span>
+          <span><img src="./images/dribbble-svgrepo-com.svg" alt=""></span>
+          <span><img src="./images/blogger-color-svgrepo-com.svg" alt=""></span>
+          <span><img src="./images/wifi-1025-svgrepo-com.svg" alt=""></span>
+        </div>
+
+        <!-- <button class="footer-btn btn-secondary ">Want to meet</button> -->
+        <button class="footer-btn btn-main" onclick="window.location.href='./Contact.html'">Want to meet</button>
+
+        <h4 class="photo-title">Photo Stream</h4>
+      
+
+       <div class="photo-grid">
+  <img src="images/36.jpg">
+  <img src="./images/one4.jpg">
+  <img src="./images/one4.jpg">
+  </div>
+<div id="gallery3" class="gallery3">
+  <span class="close3" onclick="closeGallery3()">&times;</span>
+  <img id="gallery3Img">
+</div>
+
+<!-- <button class="footer-btn btn-secondary " onclick="toggleImages()" id="imgBtn">View More</button> -->
+<button class="footer-btn btn-secondary " onclick="window.location.href='./Products.html'">View More</button>
+
+
+      </div>
+
+
+      <div class="footer-box">
+        <h2 class="heading">Contact Info</h2>
+
+ <span class="locationicon"><img class="locationimg" src="./images/location-dot-solid-full.svg" alt="">
+<a href="./Contact.html?location=2km+Defence+Road+22km+Multan+Road+Mohlanwal+Lahore+Pakistan">
+<p class="locationtext00">2 km Defence Road, 22 km Multan Road, Mohlanwal, Lahore, Pakistan
+</p>
+</a>
+</span>
+        <span class="locationicon"><img class="locationimg" src="./images/whatsapp-brands-solid-full.svg" alt="">
+    <p class="phone1">
+  <a href="https://wa.me/923008437436"
+     aria-label="WhatsApp Al Riaz Knit"
+     rel="noopener noreferrer"
+     target="_blank">
+   00923008437436
+  </a>
+</p>
+      </span>
+       <p class="phone2">
+   <a href="https://wa.me/9235966647"
+     aria-label="WhatsApp Al Riaz Knit"
+     rel="noopener noreferrer"
+     target="_blank">
+    -42-35966647
+  </a>
+</p>
+        <p class="phone3">
+           <a href="https://wa.me/9235966648"
+     aria-label="WhatsApp Al Riaz Knit"
+     rel="noopener noreferrer"
+     target="_blank"> 92-42-35966648</a>
+    </p>
+        <p class="phone3">
+          <a href="https://wa.me/9235966649"
+     aria-label="WhatsApp Al Riaz Knit"
+     rel="noopener noreferrer"
+     target="_blank"> 92-42-35966649</a></p>
+
+<span class="locationicon"><img class="locationimg" src="./images/envelope-solid-full.svg" alt="">
+  <p class="phone11">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mirza@alriazknit.com" target="_blank">
+     mirza@alriazknit.com
+    </a>
+  </p>
+</span>
+      <p class="textemail2">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Saqib@alriazknit.com" target="_blank">
+    Saqib@alriazknit.com
+    </a>
+  </p>
+       
+        
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FOOTER--SECTION---End -->
+
+
+  <!-- HEADER --- TOGGLE--OPEN--Start -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const closeMenu = document.getElementById("closeMenu");
+    const nav = document.getElementById("mainNav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.add("show");
+    });
+
+    closeMenu.addEventListener("click", () => {
+      nav.classList.remove("show");
+    });
+  </script>
+
+  <script>
+    const currentPage =
+      window.location.pathname.split("/").pop() || "Home.html";
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+      const linkPage = link.getAttribute("href").replace("./", "");
+
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+ <!-- HEADER --- TOGGLE--OPEN--END -->
+
+
+
+  <!-- BACKGROUNG--IAGE---START -->
+   <script>
+    const slides = document.querySelectorAll(".carousel-slide");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    let currentIndex = 0;
+
+   
+    slides[currentIndex].classList.add("active");
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove("active"));
+      slides[index].classList.add("active");
+    }
+
+   
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+   
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+
+    setInterval(nextSlide, 4000);
+
+  </script>
+
+<!-- Next--page image send -->
+<script>
+function goToPage(category, title, image){
+  window.location.href =
+    `Services.html?category=${category}&title=${encodeURIComponent(title)}&image=${encodeURIComponent(image)}`;
+}
+</script>
+
+<!-- 4--CARDS ANIMATED--- -->
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const cards = document.querySelectorAll(".wear-card");
+  let userScrolled = false;
+
+
+  window.addEventListener("scroll", () => {
+    userScrolled = true;
+  }, { once: true });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting && userScrolled) {
+       
+        entry.target.classList.remove("show"); 
+        void entry.target.offsetWidth;         
+        entry.target.classList.add("show");
+      } else {
+       
+        entry.target.classList.remove("show");
+      }
+
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  cards.forEach(card => observer.observe(card));
+
+});
+</script>
+
+<script>
+const images = document.querySelectorAll(".siximg img");
+const gallery = document.getElementById("gallery");
+const galleryImg = document.getElementById("galleryImg");
+
+let currentIndex1 = 0;
+
+
+images.forEach((img, index) => {
+  img.addEventListener("click", () => {
+    currentIndex1 = index;          
+    openGallery();
+  });
+});
+
+function openGallery() {
+  gallery.style.display = "flex";
+  galleryImg.src = images[currentIndex1].src;
+}
+
+function closeGallery() {
+  gallery.style.display = "none";
+}
+
+function changeSlide(step) {
+  currentIndex1 += step;
+
+  if (currentIndex1 < 0) currentIndex1 = images.length - 1;
+  if (currentIndex1 >= images.length) currentIndex1 = 0;
+
+  galleryImg.src = images[currentIndex1].src;
+}
+</script>
+
+
+<script>
+const images1 = document.querySelectorAll(".photo-grid img");
+const gallery3 = document.getElementById("gallery3");
+const gallery3Img = document.getElementById("gallery3Img");
+
+images1.forEach(img => {
+  img.addEventListener("click", () => {
+    gallery3.style.display = "flex";
+    gallery3Img.src = img.src;
+  });
+});
+
+function closeGallery3() {
+  gallery3.style.display = "none";
+}
+</script>
+
+
+<!-- TOP--BOTTOM -->
+<script>
+    const scrollContainer = document.getElementById("scrollContainer");
+    const progressRing = document.getElementById("progressRing");
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener('scroll', function() {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPosition = window.scrollY;
+      const fillPercentage = (scrollPosition / scrollHeight) * 100;
+
+      if (scrollPosition > 10) {
+        scrollContainer.style.display = "block";
+        // Update the circular progress border
+        progressRing.style.background = `conic-gradient(#005461 ${fillPercentage}%, #ddd ${fillPercentage}%)`;
+      } else {
+        scrollContainer.style.display = "none";
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+
+
+</html>

@@ -579,7 +579,7 @@ letter-spacing: 1px;
   right: 30px;
   font-size: 40px;
   font-weight: bold;
-  color: #005461;
+  color: white;
   cursor: pointer;
 }
 
@@ -652,7 +652,7 @@ letter-spacing: 1px;
 .prev2 { left: 10%; }
 .next2 { right: 10%;}
 .nav2 {
- top: 40%;
+ top: 42%;
 }
 
 }

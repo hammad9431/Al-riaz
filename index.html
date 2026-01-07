@@ -29,7 +29,7 @@
         <a href="./index.html" class="nav-link">Home</a>
         <a href="./Products.html" class="nav-link">Products</a>
         <a href="./Services.html" class="nav-link">Our Services</a>
-        <a href="/About.html" class="nav-link">About Us</a>
+        <a href="./about.html" class="nav-link">About Us</a>
         <a href="./Contact.html" class="nav-link">Contact</a>
         <a href="./Documentation.html" class="nav-link">Documentation</a>
       </nav>
@@ -213,7 +213,7 @@
           and durability...
         </p>
        
-        <button class="footer-btn btn-main" onclick="window.location.href='/About.html'">Read more</button>
+        <button class="footer-btn btn-main" onclick="window.location.href='./about.html'">Read more</button>
       </div>
 
 
@@ -415,28 +415,32 @@ function goToPage(category, title, image){
 <!-- 4--CARDS ANIMATED--- -->
  <script>
 document.addEventListener("DOMContentLoaded", () => {
-
   const cards = document.querySelectorAll(".wear-card");
   let userScrolled = false;
 
-
- window.addEventListener("scroll", enableAnimations, { once: true });
+  // Enable animations after scroll
+  window.addEventListener("scroll", () => {
+    userScrolled = true;
+  }, { once: true });
 
   const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      // Viewport se bahar jane par reset
-      entry.target.classList.remove("show");
-    }
+    entries.forEach(entry => {
+      if (entry.isIntersecting && userScrolled) {
+        // Remove and re-add for animation restart
+        entry.target.classList.remove("show"); 
+        void entry.target.offsetWidth; // Force reflow
+        entry.target.classList.add("show");
+      } else if (!entry.isIntersecting) {
+        // Reset when out of viewport
+        entry.target.classList.remove("show");
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: "-50px 0px" // ✅ Trigger animation 50px AFTER entering viewport
   });
-}, {
-  threshold: 0.2
-});
 
   cards.forEach(card => observer.observe(card));
-
 });
 </script>
 

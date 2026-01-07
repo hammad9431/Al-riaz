@@ -1,10 +1,9 @@
 @font-face {
   font-family: 'Mother Beloved';
-  src: url('./fonts/mother-beloved.regular.ttf') format('truetype');
+  src: url('../fonts/mother-beloved.regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@
 body {
  padding-top: 70px;
   background:#f2f3ff;
-font-family: 'Mother Beloved';
+ font-family: 'Mother Beloved', cursive !important;
 
 }
 
@@ -302,7 +301,6 @@ text-transform: uppercase;
 
 .text-Quality1{
 text-align: center;
-
 font-size: 98px;
 font-weight: 700;
 color: #005461;
@@ -970,7 +968,6 @@ a {
   .footer-container {
     grid-template-columns: 1fr;
   }
-
 }
 
 .scroll-to-top-container {
@@ -1082,7 +1079,7 @@ a {
 }
 .Big-imagep {
   height: 400px;
-  background-image: url('./images/productsbanner.jpg');
+  background-image: url('../images/productsbanner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;  
@@ -1090,7 +1087,7 @@ a {
 }
 .Big-image {
   height: 400px;
-  background-image: url('./images/productsbanner.jpg');
+  background-image: url('../images/productsbanner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;  

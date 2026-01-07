@@ -833,15 +833,19 @@ transition: 0.3s;
 
 
 .locationicon{
-  display: flex;
+   display: flex;
+   flex-direction:row;
    gap:10px;
    align-items: flex-start;
+    
+   flex-wrap: nowrap;
+  
 }
 .locationimg{
   height: 30px;
+  min-width: 30px;
   transition: filter 0.3s; 
 }
-
 
 a {
   text-decoration: none; 
@@ -853,6 +857,7 @@ a {
   line-height:1.5em;
   color:white;
   font-family:sans-serif;
+  width: 100%;
  
 }
 .locationtext00:hover{
@@ -860,77 +865,11 @@ a {
   text-decoration:underline;
   cursor:pointer;
 }
-.locationtext{
-  line-height:1.5em;
-}
-.phone1{
-   font-size:14px;
-  font-family:sans-serif;
-  margin-top:3px;
-  line-height:1.5em;
-}
-.phone11{
-   font-size:13px;
-  font-family:sans-serif;
-  line-height:1.5em;
-  margin-left:5px;
-}
-.phone2{
-   font-size:14px;
-  font-family:sans-serif;
-  margin-top:-8px;
-  margin-left:11%;
-  line-height:1.5em;
-} 
-.phone3{
-   font-size:14px;
-   font-family:sans-serif;
-   margin-top:-3px;
-  margin-left:11%;
-   line-height:1.5em;
-} 
-.phone1:hover{
- color:#b3e3f4;
-  text-decoration:underline;
-  cursor:pointer;
-}
-.phone11:hover{
-   color:#b3e3f4;
-  text-decoration:underline;
-  cursor:pointer;
-}
-.phone2:hover{
-   color:#b3e3f4;
-  text-decoration:underline;
-  cursor:pointer;
-}
-.phone3:hover{
-   color:#b3e3f4;
-  text-decoration:underline;
-  cursor:pointer;
-}
-.textemail2{
-   font-size:13px;
-  font-family:sans-serif;
-  margin-left:12%;
-  margin-top:-9px;
-  line-height:1.5em;
-}
-.textemail2:hover{
-  color:#b3e3f4;
-  text-decoration:underline;
-  cursor:pointer;
+.photo-title{
+    font-size:25px;
+    margin:10px 0px;
 }
 
-.photo-title{
-  margin-bottom:20px;
-  line-height:1.2;
-  font-weight:normal;
-  letter-spacing:-1px;
-  margin-top:10px;
-  font-size:33px;
-  
-}
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -944,39 +883,12 @@ a {
   height: 70px;
   object-fit: cover;
 }
-#moreImages {
-  display: none;             
-  grid-column: span 3;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
 
-/* 📱 MOBILE VIEW */
 @media (max-width: 1024px) {
-  .locationtext00{
-  
-  font-size:15px;
-}
-.phone1{
-  font-size:17px;
-}
- .phone2{
-  margin-left:15%;
-  font-size:17px;
+  .about-text{
+    font-size:14px;
+  }
  
-}
-  .phone3{
-  font-size:17px;
-  margin-left:15%;
-}
-.phone11{
- font-size:17px;
-}
-.textemail2{
-  margin-left:16%;
-  font-size:17px;
-  
-}
 }
 @media (max-width: 768px) {
   .footer {
@@ -992,13 +904,16 @@ a {
   margin-top: 10px;
   padding: 10px 18px;
 }
+.btn-main1 {
+  width: 30%;
+ 
+ }
 .btn-main {
   width: 60%;
-   margin-left: 20%;
  }
 .btn-secondary {
   width: 60%; 
-  margin-left:20%;
+  
 }
 .footer-container {
     display: grid;
@@ -1021,39 +936,6 @@ a {
     box-sizing: border-box;
    
   }
-  .locationicon {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;     
-    gap: 5px;            
-  }
-  .locationtext00{
-    margin-top:-33px;
-    margin-left:34px;
-    font-size:14px;
-  }
-.phone1{
-  margin-left:0%;
-  font-size:14px;
-  margin-top:4px;
-}
-.phone11{
-  margin-left:0%;
-   font-size:14px;
-}
-  .textemail2{
-  margin-left:13%;
-   font-size:14px;
-  
-}
-  .phone2{
-  margin-left:13%;
-   font-size:14px;
-}
-  .phone3{
-  font-size:14px;
-  margin-left:14%;
-}
 }
 @media (max-width: 600px) {
   .heading{
@@ -1079,45 +961,16 @@ a {
 
    margin-left: auto;
  }
-  .locationtext00{
-    font-size:14px;
-   
-  }
+  
   .about-text{
     font-size:13px;
     
   }
- .locationicon{
-   gap:2px;
-}
+
   .footer-container {
     grid-template-columns: 1fr;
   }
 
- 
-  .textemail2{
-   margin-left:12%;
-   font-size:15px;
-  
-}
-.phone1 {
-  margin-left:0%;
-  font-size:15px;
-  margin-top:4px
-}
-.phone11{
-  margin-left:1%;
-  font-size:15px;
-}
-.phone2{
-  margin-left:11%;
-  font-size:15px;
- 
-}
- .phone3{
-  font-size:15px;
-  margin-left:11%;
-}
 }
 
 .scroll-to-top-container {
@@ -1192,6 +1045,33 @@ a {
       
     }
     }
+
+  
+.top-bar1{
+ 
+  background: black;
+  color: white;
+  padding: 15px 30px;
+}
+
+
+.copyright{
+    text-align:center;
+    justify-content:center;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+@media(max-width:768px){
+  .copyright{
+  font-size: 11px;
+}
+}
+
+
+
+
+
+
 
 /* ----PRODUCTSS---PAGE---START----- */
 .product-title{
@@ -1819,25 +1699,25 @@ iframe {
 
 @media(max-width:768px){
   .map-container {
-  width: 100%;
+  width:auto;
   height: auto;
-  margin: 20px 0;
-  padding:0px 10px;
+  padding:0px 15px;
 }
 .container{
-  width:100%;
+  width:auto;
+    padding:0px 15px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media(max-width:600px){
   .map-container {
-  width: 100%;
+ 
   height: auto;
-  margin: 20px 0;
-  padding:0px 10px;
+  padding:0px 15px;
 }
 .container{
-  width:100%;
+ 
+  padding:0px 15px;
     grid-template-columns: repeat(1, 1fr);
   }
   .card h3{

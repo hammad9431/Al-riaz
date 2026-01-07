@@ -420,27 +420,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let userScrolled = false;
 
 
-  window.addEventListener("scroll", () => {
-    userScrolled = true;
-  }, { once: true });
+ window.addEventListener("scroll", enableAnimations, { once: true });
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-
-      if (entry.isIntersecting && userScrolled) {
-       
-        entry.target.classList.remove("show"); 
-        void entry.target.offsetWidth;         
-        entry.target.classList.add("show");
-      } else {
-       
-        entry.target.classList.remove("show");
-      }
-
-    });
-  }, {
-    threshold: 0.3
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      // Viewport se bahar jane par reset
+      entry.target.classList.remove("show");
+    }
   });
+}, {
+  threshold: 0.2
+});
 
   cards.forEach(card => observer.observe(card));
 
